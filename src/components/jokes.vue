@@ -26,7 +26,7 @@ export default {
   methods: {
     postJoke(){
       this.loading = true;
-      axios.get('http://pebble-pickup.herokuapp.com/tweets/random').then((res)=> {
+      axios.get('https://pebble-pickup.herokuapp.com/tweets/random').then((res)=> {
         this.loading = false;
         const presentJoke = res.data.tweet;
         const user = res.data.username;
